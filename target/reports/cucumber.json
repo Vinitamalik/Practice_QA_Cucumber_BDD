@@ -3,29 +3,35 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-25T01:31:13.014Z",
-        "line": 5,
-        "name": "createToken for Customer user and verify Status as \u0027200\u0027",
+        "start_timestamp": "2023-11-26T00:39:52.732Z",
+        "line": 13,
+        "name": "Create Logger for MR_812P",
         "description": "",
-        "id": "token-generation;createtoken-for-customer-user-and-verify-status-as--200-",
+        "id": "logger-creation-functionality;create-logger-for-\u003cloggertype\u003e;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2627569000,
+              "duration": 1520509101,
               "status": "passed"
             },
             "line": 6,
-            "name": "Create the Token for customer user",
+            "name": "Call lORA configuration API to create Logger using \"MR_812P\" and assert max 16 HEX chars only",
             "match": {
-              "location": "stepdefinition.createToken()"
+              "arguments": [
+                {
+                  "val": "\"MR_812P\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinition.Create_logger_Type(String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 577800,
+              "duration": 746600,
               "status": "passed"
             },
             "line": 7,
@@ -37,512 +43,160 @@
           },
           {
             "result": {
-              "duration": 3399800,
+              "duration": 2343701,
               "status": "passed"
             },
             "line": 8,
-            "name": "Return the Status code as \"200\" and verify the status code should be \"200\" in case of \"Token Generation\"",
+            "name": "user should get response status code as \"201\"",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 27
-                },
-                {
-                  "val": "200",
-                  "offset": 70
-                },
-                {
-                  "val": "Token Generation",
-                  "offset": 87
+                  "val": "\"201\"",
+                  "offset": 40
                 }
               ],
-              "location": "stepdefinition.returnAndVerifyStatusCode(int,int,String)"
+              "location": "stepdefinition.Invalid_cases(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1110800,
+              "duration": 575900,
               "status": "passed"
             },
             "line": 9,
-            "name": "Return the Status Line as \"HTTP/1.1 200 OK\" and verify the status Line should be \"HTTP/1.1 200 OK\" in case of \"Token Generation\"",
+            "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
             "match": {
               "arguments": [
                 {
-                  "val": "HTTP/1.1 200 OK",
+                  "val": "HTTP/1.1 201 Created",
                   "offset": 27
                 },
                 {
-                  "val": "HTTP/1.1 200 OK",
-                  "offset": 82
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 87
                 },
                 {
-                  "val": "Token Generation",
-                  "offset": 111
+                  "val": "Creation of Loggers",
+                  "offset": 121
                 }
               ],
               "location": "stepdefinition.returnAndVerifyStatusLine(String,String,String)"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Logger_Functionality"
+          },
+          {
+            "name": "@Create_Logger_for_Type_1_and_Type_2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-26T00:39:54.281Z",
+        "line": 14,
+        "name": "Create Logger for MR_810T",
+        "description": "",
+        "id": "logger-creation-functionality;create-logger-for-\u003cloggertype\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 315386800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Call lORA configuration API to create Logger using \"MR_810T\" and assert max 16 HEX chars only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MR_810T\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinition.Create_logger_Type(String)"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 99572500,
+              "duration": 417200,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Get the Token Value",
+            "line": 7,
+            "name": "Return the response Body",
             "match": {
-              "location": "stepdefinition.getToken()"
+              "location": "stepdefinition.returningResponseBody()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 268100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should get response status code as \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinition.Invalid_cases(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 446000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 27
+                },
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 87
+                },
+                {
+                  "val": "Creation of Loggers",
+                  "offset": 121
+                }
+              ],
+              "location": "stepdefinition.returnAndVerifyStatusLine(String,String,String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@TokenGeneration"
+            "name": "@Logger_Functionality"
           },
           {
-            "name": "@Generate_and_Get_Token_Value"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-11-25T01:31:15.776Z",
-        "line": 22,
-        "name": "This is to verify the token bearer in case of Invalid Invalid_UserName",
-        "description": "",
-        "id": "token-generation;this-is-to-verify-the-token-bearer-in-case-of-invalid-\u003cscenario\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 373419100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user calls the Token api \"Invalid_UserName\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid_UserName\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinition.Token_api(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 459900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Return the response Body",
-            "match": {
-              "location": "stepdefinition.returningResponseBody()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 450100,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user should get response status code as \"401\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"401\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinition.Invalid_cases(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 781300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "response should contain \"Invalid user credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid user credentials\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinition.Invalid_Response(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TokenGeneration"
-          },
-          {
-            "name": "@createdToken_UnsingInvalidCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-11-25T01:31:16.157Z",
-        "line": 23,
-        "name": "This is to verify the token bearer in case of Invalid Invalid Password",
-        "description": "",
-        "id": "token-generation;this-is-to-verify-the-token-bearer-in-case-of-invalid-\u003cscenario\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 380558100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user calls the Token api \"Invalid Password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid Password\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinition.Token_api(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 378300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Return the response Body",
-            "match": {
-              "location": "stepdefinition.returningResponseBody()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 239700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user should get response status code as \"401\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"401\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinition.Invalid_cases(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1261700,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "response should contain \"Invalid user credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid user credentials\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinition.Invalid_Response(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TokenGeneration"
-          },
-          {
-            "name": "@createdToken_UnsingInvalidCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-11-25T01:31:16.550Z",
-        "line": 24,
-        "name": "This is to verify the token bearer in case of Invalid Invalid Client ID",
-        "description": "",
-        "id": "token-generation;this-is-to-verify-the-token-bearer-in-case-of-invalid-\u003cscenario\u003e;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 343163600,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user calls the Token api \"Invalid Client ID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid Client ID\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinition.Token_api(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2160300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Return the response Body",
-            "match": {
-              "location": "stepdefinition.returningResponseBody()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 633300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user should get response status code as \"401\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"401\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinition.Invalid_cases(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1295200,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "response should contain \"Invalid client or Invalid client credentials\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid client or Invalid client credentials\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinition.Invalid_Response(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TokenGeneration"
-          },
-          {
-            "name": "@createdToken_UnsingInvalidCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-11-25T01:31:16.909Z",
-        "line": 25,
-        "name": "This is to verify the token bearer in case of Invalid Invalid Grant_Type",
-        "description": "",
-        "id": "token-generation;this-is-to-verify-the-token-bearer-in-case-of-invalid-\u003cscenario\u003e;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 316858300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user calls the Token api \"Invalid Grant_Type\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid Grant_Type\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinition.Token_api(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 282000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Return the response Body",
-            "match": {
-              "location": "stepdefinition.returningResponseBody()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 756300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user should get response status code as \"400\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"400\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinition.Invalid_cases(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 389300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "response should contain \"Unsupported grant_type\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Unsupported grant_type\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinition.Invalid_Response(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TokenGeneration"
-          },
-          {
-            "name": "@createdToken_UnsingInvalidCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-11-25T01:31:17.232Z",
-        "line": 37,
-        "name": "This is to verify the token bearer in case of Invalid Unsupported Conetent_Type",
-        "description": "",
-        "id": "token-generation;this-is-to-verify-the-token-bearer-in-case-of-invalid-\u003cscenario\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 323054500,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "user calls the Token api \"Unsupported Conetent_Type\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Unsupported Conetent_Type\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinition.Token_api(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 435800,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Return the response Body",
-            "match": {
-              "location": "stepdefinition.returningResponseBody()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 632900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "user should get response status code as \"415\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"415\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinition.Invalid_cases(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 248500,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "response should contain error \"RESTEASY003065: Cannot consume content type\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"RESTEASY003065: Cannot consume content type\"",
-                  "offset": 30
-                }
-              ],
-              "location": "stepdefinition.Invalid_Content_Type(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TokenGeneration"
-          },
-          {
-            "name": "@createdToken_using_Unsupported_ContentType"
+            "name": "@Create_Logger_for_Type_1_and_Type_2"
           }
         ]
       }
     ],
-    "name": "Token Generation",
+    "name": "Logger Creation Functionality",
     "description": "",
-    "id": "token-generation",
+    "id": "logger-creation-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/Test_2.feature",
+    "uri": "file:src/test/resources/feature/Test_3.feature",
     "tags": [
       {
-        "name": "@TokenGeneration",
+        "name": "@Logger_Functionality",
         "type": "Tag",
         "location": {
           "line": 1,

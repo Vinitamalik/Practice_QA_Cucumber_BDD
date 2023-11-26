@@ -72,5 +72,19 @@ public class stepdefinition {
         pg.get_error(error);
     }
 
+    @Given("Call lORA configuration API to create Logger using {string} and assert max 16 HEX chars only")
+    public void Create_logger_Type(String LoggerType) throws Throwable {
+        pg.create_logger_type(LoggerType);
+    }
+
+    @Given("Call lORA configuration API to create Logger using {string} and {string} against {string}")
+    public void Positive_Negative_cases(String LoggerType,String loggerNumber, String Scenario) throws Throwable {
+        pg.Logger_Positive_Negative_cases(LoggerType,loggerNumber,Scenario);
+    }
+
+    @Then("response should contain message {string}")
+    public void messages(String message) throws Throwable {
+        pg.get_message_description(message);
+    }
 
 }

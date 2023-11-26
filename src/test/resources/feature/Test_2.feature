@@ -33,7 +33,7 @@ Feature: Token Generation
     Then response should contain error "<error>"
 
     Examples:
-      | Scenario                   | StatusCode | error                                                      |
+      | Scenario                   | StatusCode | error                                       |
       | Unsupported Conetent_Type  | 415        | RESTEASY003065: Cannot consume content type |
 
 

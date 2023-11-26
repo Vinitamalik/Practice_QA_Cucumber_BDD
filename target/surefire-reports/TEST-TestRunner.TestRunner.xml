@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="TestRunner.TestRunner" time="3.154" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="TestRunner.TestRunner" time="4.106" errors="4" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,8 +64,160 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Token Generation" name="This is to verify the token bearer in case of Invalid Invalid_UserName" time="2.122"/>
-  <testcase classname="Token Generation" name="This is to verify the token bearer in case of Invalid Invalid Password" time="0.37"/>
-  <testcase classname="Token Generation" name="This is to verify the token bearer in case of Invalid Invalid Client ID" time="0.334"/>
-  <testcase classname="Token Generation" name="This is to verify the token bearer in case of Invalid Invalid Grant_Type" time="0.328"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for MR_812P" time="1.37"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for MR_810T" time="0.303"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using Non-Hex 16 chars key" time="0.305"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using Non-Hex 16 chars key" time="0.295"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using 17 Hex Chars Key" time="0.323">
+    <error message="A JSONArray text must start with &apos;[&apos; at 0 [character 1 line 1]" type="org.json.JSONException">org.json.JSONException: A JSONArray text must start with &apos;[&apos; at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:505)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:161)
+	at PageFactory.Implementation_Class.get_message_description(Implementation_Class.java:278)
+	at StepDefinition.stepdefinition.messages(stepdefinition.java:87)
+	at ✽.response should contain message &quot;Hex id 0123456789AFBCDE1 couldn&apos;t be parsed&quot;(file:src/test/resources/feature/Test_3.feature:22)
+</error>
+    <system-out>
+  @Logger_Functionality @Create_Logger_for_Type_1_and_Type_2_All_negative_cases
+  Scenario Outline: Create Logger for Using 17 Hex Chars Key                                                                    # src/test/resources/feature/Test_3.feature:29
+Request method:	POST
+Request path:	https://sensor-data-ingestion.dev.skycell.ch/v1/lora/configuration
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Headers:		APIKEY= NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Body:
+{
+    &quot;loggerType&quot;: &quot;MR_812P&quot;,
+    &quot;loggerNumber&quot;: &quot;0123456789AFBCDE1&quot;,
+    &quot;baseInterval&quot;: &quot;600&quot;
+}
+Request method:	POST
+Request path:	https://sensor-data-ingestion.dev.skycell.ch/v1/lora/configuration
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Headers:		APIKEY= NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Body:
+{
+    &quot;loggerType&quot;: &quot;MR_812P&quot;,
+    &quot;loggerNumber&quot;: &quot;0123456789AFBCDE1&quot;,
+    &quot;baseInterval&quot;: &quot;600&quot;
+}
+HTTP/1.1 201 Created
+Content-Length: 0
+Date: Sun, 26 Nov 2023 00:12:59 GMT
+    Given Call lORA configuration API to create Logger using &quot;MR_812P&quot; and &quot;0123456789AFBCDE1&quot; against &quot;Using 17 Hex Chars Key&quot; # stepdefinition.Positive_Negative_cases(String,String,String)
+    Then Return the response Body                                                                                               # stepdefinition.returningResponseBody()
+StatusCode201
+    Then user should get response status code as &quot;400&quot;                                                                          # stepdefinition.Invalid_cases(String)
+    Then response should contain message &quot;Hex id 0123456789AFBCDE1 couldn&apos;t be parsed&quot;                                          # stepdefinition.messages(String)
+      org.json.JSONException: A JSONArray text must start with &apos;[&apos; at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:505)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:161)
+	at PageFactory.Implementation_Class.get_message_description(Implementation_Class.java:278)
+	at StepDefinition.stepdefinition.messages(stepdefinition.java:87)
+	at ?.response should contain message &quot;Hex id 0123456789AFBCDE1 couldn&apos;t be parsed&quot;(file:src/test/resources/feature/Test_3.feature:22)
+
+</system-out>
+  </testcase>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using 20 Hex Chars Key" time="0.295"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using 0 chars Hex Key" time="0.299"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using 0 chars Hex Key" time="0.305"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using Invalid Logger Type" time="0.296"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Using without Logger Type" time="0.303"/>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Invalid Invalid Content Type" time="0.006">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ✽.Return the response Body(file:src/test/resources/feature/Test_3.feature:39)
+</error>
+    <system-out>
+  @Invalid_Content_type
+  Scenario Outline: Create Logger for Invalid &lt;Scenario&gt; # src/test/resources/feature/Test_3.feature:37
+    Given Call lORA configuration API to create Logger using &quot;&lt;LoggerType&gt;&quot; and &quot;&lt;loggerNumber&gt;&quot; against &quot;&lt;Scenario&gt;&quot;
+    Then Return the response Body
+    Then user should get response status code as &quot;&lt;StatusCode&gt;&quot;
+    Then response should contain error &quot;&lt;error&gt;&quot;
+
+    Examples: 
+
+  @Logger_Functionality @Invalid_Content_type
+  Scenario Outline: Create Logger for Invalid Invalid Content Type                                                    # src/test/resources/feature/Test_3.feature:46
+    Given Call lORA configuration API to create Logger using &quot;MR_812P&quot; and &quot;012345678&quot; against &quot;Invalid Content Type&quot; # stepdefinition.Positive_Negative_cases(String,String,String)
+    Then Return the response Body                                                                                     # stepdefinition.returningResponseBody()
+      java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ?.Return the response Body(file:src/test/resources/feature/Test_3.feature:39)
+
+    Then user should get response status code as &quot;415&quot;                                                                # stepdefinition.Invalid_cases(String)
+    Then response should contain error &quot;RESTEASY003065: Cannot consume content type&quot;                                  # stepdefinition.Invalid_Content_Type(String)
+</system-out>
+  </testcase>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Invalid Invalid API KEY" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ✽.Return the response Body(file:src/test/resources/feature/Test_3.feature:51)
+</error>
+    <system-out>
+  @Invalid_Authorization
+  Scenario Outline: Create Logger for Invalid &lt;Auth_Scenario&gt; # src/test/resources/feature/Test_3.feature:49
+    Given Call lORA configuration API to create Logger using &quot;&lt;LoggerType&gt;&quot; and &quot;&lt;loggerNumber&gt;&quot; against &quot;&lt;Auth_Scenario&gt;&quot;
+    Then Return the response Body
+    Then user should get response status code as &quot;&lt;StatusCode&gt;&quot;
+
+    Examples: 
+
+  @Logger_Functionality @Invalid_Authorization
+  Scenario Outline: Create Logger for Invalid Invalid API KEY                                                    # src/test/resources/feature/Test_3.feature:56
+    Given Call lORA configuration API to create Logger using &quot;MR_810T&quot; and &quot;012345678&quot; against &quot;Invalid API KEY&quot; # stepdefinition.Positive_Negative_cases(String,String,String)
+    Then Return the response Body                                                                                # stepdefinition.returningResponseBody()
+      java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ?.Return the response Body(file:src/test/resources/feature/Test_3.feature:51)
+
+    Then user should get response status code as &quot;401&quot;                                                           # stepdefinition.Invalid_cases(String)
+</system-out>
+  </testcase>
+  <testcase classname="Logger Creation Functionality" name="Create Logger for Invalid Empty API KEy" time="0.002">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ✽.Return the response Body(file:src/test/resources/feature/Test_3.feature:51)
+</error>
+    <system-out>
+  @Logger_Functionality @Invalid_Authorization
+  Scenario Outline: Create Logger for Invalid Empty API KEy                                                    # src/test/resources/feature/Test_3.feature:57
+    Given Call lORA configuration API to create Logger using &quot;MR_812P&quot; and &quot;012345678&quot; against &quot;Empty API KEy&quot; # stepdefinition.Positive_Negative_cases(String,String,String)
+    Then Return the response Body                                                                              # stepdefinition.returningResponseBody()
+      java.lang.NullPointerException
+	at Common.ApiHelper.getResponseBody(ApiHelper.java:132)
+	at PageFactory.Implementation_Class.returnResponseBody(Implementation_Class.java:58)
+	at StepDefinition.stepdefinition.returningResponseBody(stepdefinition.java:37)
+	at ?.Return the response Body(file:src/test/resources/feature/Test_3.feature:51)
+
+    Then user should get response status code as &quot;401&quot;                                                         # stepdefinition.Invalid_cases(String)
+</system-out>
+  </testcase>
 </testsuite>

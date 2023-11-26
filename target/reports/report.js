@@ -1,33 +1,84 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/Test_2.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/feature/Test_3.feature");
 formatter.feature({
-  "name": "Token Generation",
+  "name": "Logger Creation Functionality",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@TokenGeneration"
+      "name": "@Logger_Functionality"
     }
   ]
 });
-formatter.scenario({
-  "name": "createToken for Customer user and verify Status as \u0027200\u0027",
+formatter.scenarioOutline({
+  "name": "Create Logger for \u003cLoggerType\u003e",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@Generate_and_Get_Token_Value"
+      "name": "@Create_Logger_for_Type_1_and_Type_2"
     }
   ]
 });
 formatter.step({
-  "name": "Create the Token for customer user",
-  "keyword": "When "
+  "name": "Call lORA configuration API to create Logger using \"\u003cLoggerType\u003e\" and assert max 16 HEX chars only",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "Return the response Body",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "user should get response status code as \"\u003cStatusCode\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "LoggerType",
+        "StatusCode"
+      ]
+    },
+    {
+      "cells": [
+        "MR_812P",
+        "201"
+      ]
+    },
+    {
+      "cells": [
+        "MR_810T",
+        "201"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Create Logger for MR_812P",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Logger_Functionality"
+    },
+    {
+      "name": "@Create_Logger_for_Type_1_and_Type_2"
+    }
+  ]
+});
+formatter.step({
+  "name": "Call lORA configuration API to create Logger using \"MR_812P\" and assert max 16 HEX chars only",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinition.createToken()"
+  "location": "stepdefinition.Create_logger_Type(String)"
 });
 formatter.result({
   "status": "passed"
@@ -43,17 +94,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Return the Status code as \"200\" and verify the status code should be \"200\" in case of \"Token Generation\"",
-  "keyword": "And "
+  "name": "user should get response status code as \"201\"",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinition.returnAndVerifyStatusCode(int,int,String)"
+  "location": "stepdefinition.Invalid_cases(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Return the Status Line as \"HTTP/1.1 200 OK\" and verify the status Line should be \"HTTP/1.1 200 OK\" in case of \"Token Generation\"",
+  "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
   "keyword": "And "
 });
 formatter.match({
@@ -62,392 +113,55 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Create Logger for MR_810T",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Logger_Functionality"
+    },
+    {
+      "name": "@Create_Logger_for_Type_1_and_Type_2"
+    }
+  ]
+});
 formatter.step({
-  "name": "Get the Token Value",
+  "name": "Call lORA configuration API to create Logger using \"MR_810T\" and assert max 16 HEX chars only",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinition.Create_logger_Type(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Return the response Body",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinition.returningResponseBody()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should get response status code as \"201\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinition.Invalid_cases(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinition.getToken()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "This is to verify the token bearer in case of Invalid \u003cScenario\u003e",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@createdToken_UnsingInvalidCredentials"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"\u003cScenario\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user should get response status code as \"\u003cStatusCode\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "response should contain \"\u003cerror_description\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "Scenario",
-        "StatusCode",
-        "error_description"
-      ]
-    },
-    {
-      "cells": [
-        "Invalid_UserName",
-        "401",
-        "Invalid user credentials"
-      ]
-    },
-    {
-      "cells": [
-        "Invalid Password",
-        "401",
-        "Invalid user credentials"
-      ]
-    },
-    {
-      "cells": [
-        "Invalid Client ID",
-        "401",
-        "Invalid client or Invalid client credentials"
-      ]
-    },
-    {
-      "cells": [
-        "Invalid Grant_Type",
-        "400",
-        "Unsupported grant_type"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "This is to verify the token bearer in case of Invalid Invalid_UserName",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@createdToken_UnsingInvalidCredentials"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"Invalid_UserName\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepdefinition.Token_api(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.returningResponseBody()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should get response status code as \"401\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_cases(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "response should contain \"Invalid user credentials\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_Response(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "This is to verify the token bearer in case of Invalid Invalid Password",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@createdToken_UnsingInvalidCredentials"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"Invalid Password\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepdefinition.Token_api(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.returningResponseBody()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should get response status code as \"401\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_cases(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "response should contain \"Invalid user credentials\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_Response(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "This is to verify the token bearer in case of Invalid Invalid Client ID",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@createdToken_UnsingInvalidCredentials"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"Invalid Client ID\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepdefinition.Token_api(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.returningResponseBody()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should get response status code as \"401\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_cases(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "response should contain \"Invalid client or Invalid client credentials\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_Response(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "This is to verify the token bearer in case of Invalid Invalid Grant_Type",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@createdToken_UnsingInvalidCredentials"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"Invalid Grant_Type\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepdefinition.Token_api(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.returningResponseBody()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should get response status code as \"400\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_cases(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "response should contain \"Unsupported grant_type\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_Response(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "This is to verify the token bearer in case of Invalid \u003cScenario\u003e",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@createdToken_using_Unsupported_ContentType"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"\u003cScenario\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user should get response status code as \"\u003cStatusCode\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "response should contain error \"\u003cerror\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "Scenario",
-        "StatusCode",
-        "error"
-      ]
-    },
-    {
-      "cells": [
-        "Unsupported Conetent_Type",
-        "415",
-        "RESTEASY003065: Cannot consume content type"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "This is to verify the token bearer in case of Invalid Unsupported Conetent_Type",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TokenGeneration"
-    },
-    {
-      "name": "@createdToken_using_Unsupported_ContentType"
-    }
-  ]
-});
-formatter.step({
-  "name": "user calls the Token api \"Unsupported Conetent_Type\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepdefinition.Token_api(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Return the response Body",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.returningResponseBody()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should get response status code as \"415\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_cases(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "response should contain error \"RESTEASY003065: Cannot consume content type\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinition.Invalid_Content_Type(String)"
+  "location": "stepdefinition.returnAndVerifyStatusLine(String,String,String)"
 });
 formatter.result({
   "status": "passed"
