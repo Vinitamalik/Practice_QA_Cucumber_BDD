@@ -58,6 +58,10 @@ public class API extends ApiHelper{
         return givenConfig(urlKey, headers).body(gson().toJson(models)).when().post(path);
     }
 
+    public Response apiPostRequest_1(String urlKey, String path,  Map<String, Object> headers, String REQ) {
+        return givenConfig(urlKey, headers).body(REQ).when().post(path);
+    }
+
     public Response apiPostRequest(String urlKey, String path, Map<String, Object> headers, JSONObject models) {
         return givenConfig(urlKey, headers).body(models.toString()).log().all().when().post(path);
     }

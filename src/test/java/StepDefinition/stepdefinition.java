@@ -87,4 +87,73 @@ public class stepdefinition {
         pg.get_message_description(message);
     }
 
+    @Given("Call sensor API to create Logger using LoggerNumber {string}")
+    public void Send_Sensor_Data(String Scenario) throws Throwable {
+        pg.create_Sensor_Data(Scenario);
+    }
+
+    /** Battery Level : Test 1**/
+
+    @Given("the customer has access to the cloud platform")
+    public void Select_Location() throws Throwable {
+
+    }
+    @When("the customer dynamically selects specific locations for battery replacements")
+    public void Select_Location_when() throws Throwable {
+
+    }
+    @Then("the system should use these selected locations for battery replacements")
+    public void Select_Location_Then() throws Throwable {
+
+    }
+
+    @Given("the battery level of a logger is below the dynamically set threshold")
+    public void battery() throws Throwable {
+
+    }
+    @When("the customer dynamically sets the battery level configuration")
+    public void Set_Location_when() throws Throwable {
+
+    }
+    @Then("the system should use this configuration for monitoring battery levels")
+    public void Set_Location_then() throws Throwable {
+
+    }
+
+    @And("the logger is in a location selected for battery replacements")
+    public void location() throws Throwable {
+
+    }
+    @When("the system checks the battery level")
+    public void Set_level() throws Throwable {
+
+    }
+    @When("the LED outside the logger should blink")
+    public void Set_blink() throws Throwable {
+
+    }
+    @When("the LED in other locations should remain off")
+    public void Set_off() throws Throwable {
+
+    }
+
+    @When("the system has identified a logger in a location for battery replacement")
+    public void replace() throws Throwable {
+
+    }
+    @When("the customer initiates the battery replacement process")
+    public void Set() throws Throwable {
+
+    }
+    @When("the system should update the battery with a new one")
+    public void update() throws Throwable {
+
+    }
+    @When("the logger should resume normal operation")
+    public void resume() throws Throwable {
+
+    }
+
+
+
 }

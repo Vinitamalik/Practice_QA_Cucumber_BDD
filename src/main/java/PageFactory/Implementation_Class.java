@@ -2,6 +2,7 @@ package PageFactory;
 
 import Common.API;
 import Common.ApiHelper;
+import Common.JSONUtils;
 import Test_Data_Modules.TestData;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.restassured.response.Response;
@@ -9,7 +10,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,12 +26,16 @@ public class Implementation_Class {
     ApiHelper api = new ApiHelper();
     API restMethods = new API();
 
+    JSONUtils json = new JSONUtils();
+
     Response responseBody;
     Map<String, Object> headers = new HashMap<String, Object>();
     JSONObject models = new JSONObject();
     String Token_endpoint = TestData.Token_endpoint.getValue();
     String Token_path_resources= TestData.Token_path_resources.getValue();
     String Token_content_Type= TestData.Token_content_Type.getValue();
+    String Sensor_REQ_MR_812P= TestData.Sensor_REQ_MR_812P.getValue();
+    String Sensor_REQ_MR_MR_810T= TestData.Sensor_REQ_MR_MR_810T.getValue();
 
     String Token_Req_Body = TestData.Token_Req_Body.getValue();
     String Token_Req_Body_invalidUser_name= TestData.Token_Req_Body_invalidUser_name.getValue();
@@ -38,6 +45,7 @@ public class Implementation_Class {
     String Token_Invalid_Content_Type = TestData.Token_Invalid_Content_Type.getValue();
     String Lora_Config_Endpoints = TestData.Lora_Config_Endpoints.getValue();
     String Lora_config_resources= TestData.Lora_config_resources.getValue();
+    String Sensor_config_resources= TestData.Sensor_config_resources.getValue();
     String Content_Type= TestData.Content_Type.getValue();
     String APIKEY = TestData.APIKEY.getValue();
     String loggerNumber_Type_MR_812P= TestData.loggerNumber_Type_MR_812P.getValue();
@@ -84,6 +92,7 @@ public class Implementation_Class {
         System.out.println("Token Value" + " " + tokenValue);
         return tokenValue;
     }
+
 
     public void Token_api_Invalid_cases(String Scenario) throws IOException {
         if (Scenario.equals("Invalid_UserName")){
@@ -317,6 +326,20 @@ public class Implementation_Class {
 
         }
 
+    }
+
+    public void create_Sensor_Data(String Scenario) throws IOException {
+        headers.put("Content-Type",Content_Type);
+        headers.put("APIKEY",APIKEY );
+        if(Scenario.equals("Create sensor data for MR_812P")){
+
+            responseBody = restMethods.apiPostRequest_1(Lora_Config_Endpoints, Sensor_config_resources, headers, Sensor_REQ_MR_812P);
+            System.out.println(responseBody);
+        }
+        else if(Scenario.equals("Create sensor data for MR_810T")){
+
+            responseBody = restMethods.apiPostRequest_1(Lora_Config_Endpoints, Sensor_config_resources, headers, Sensor_REQ_MR_MR_810T);
+        }
 
     }
 

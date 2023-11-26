@@ -1,0 +1,208 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-11-26T17:38:28.348Z",
+        "line": 13,
+        "name": "Create Logger for MR_812P",
+        "description": "",
+        "id": "logger-creation-functionality;create-logger-for-\u003cloggertype\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2132428600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Call lORA configuration API to create Logger using \"MR_812P\" and assert max 16 HEX chars only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MR_812P\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinition.Create_logger_Type(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 723400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Return the response Body",
+            "match": {
+              "location": "stepdefinition.returningResponseBody()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2021200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should get response status code as \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinition.Invalid_cases(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 540200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 27
+                },
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 87
+                },
+                {
+                  "val": "Creation of Loggers",
+                  "offset": 121
+                }
+              ],
+              "location": "stepdefinition.returnAndVerifyStatusLine(String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Logger_Functionality"
+          },
+          {
+            "name": "@Create_Logger_for_Type_1_and_Type_2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-26T17:38:30.553Z",
+        "line": 14,
+        "name": "Create Logger for MR_810T",
+        "description": "",
+        "id": "logger-creation-functionality;create-logger-for-\u003cloggertype\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 323104900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Call lORA configuration API to create Logger using \"MR_810T\" and assert max 16 HEX chars only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MR_810T\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepdefinition.Create_logger_Type(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 775000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Return the response Body",
+            "match": {
+              "location": "stepdefinition.returningResponseBody()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 421400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should get response status code as \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinition.Invalid_cases(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1181600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Return the Status Line as \"HTTP/1.1 201 Created\" and verify the status Line should be \"HTTP/1.1 201 Created\" in case of \"Creation of Loggers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 27
+                },
+                {
+                  "val": "HTTP/1.1 201 Created",
+                  "offset": 87
+                },
+                {
+                  "val": "Creation of Loggers",
+                  "offset": 121
+                }
+              ],
+              "location": "stepdefinition.returnAndVerifyStatusLine(String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Logger_Functionality"
+          },
+          {
+            "name": "@Create_Logger_for_Type_1_and_Type_2"
+          }
+        ]
+      }
+    ],
+    "name": "Logger Creation Functionality",
+    "description": "",
+    "id": "logger-creation-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Test_3.feature",
+    "tags": [
+      {
+        "name": "@Logger_Functionality",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
