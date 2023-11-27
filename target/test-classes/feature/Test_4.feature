@@ -1,5 +1,5 @@
 @Test_4_Functionality
-Feature: Logger Creation Functionality
+Feature: Sensor Data creation
 
   @Logger_sending_Data_to_server
   Scenario Outline: Send data to server against the Logger number "<Scenario>"
@@ -9,6 +9,10 @@ Feature: Logger Creation Functionality
     And Return the Status Line as "HTTP/1.1 201 Created" and verify the status Line should be "HTTP/1.1 201 Created" in case of "Creation of Loggers"
 
     Examples:
-     |Scenario                                | StatusCode |
-     | Create sensor data for MR_812P         | 201        |
-  #   | Create sensor data for MR_810T         | 201        |
+      |Scenario                                | StatusCode |
+      | Create sensor data for MR_812P         | 201        |
+      | Create sensor data for MR_810T         | 201        |
+
+
+
+

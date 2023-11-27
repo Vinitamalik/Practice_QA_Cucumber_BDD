@@ -2,7 +2,6 @@ package PageFactory;
 
 import Common.API;
 import Common.ApiHelper;
-import Common.JSONUtils;
 import Test_Data_Modules.TestData;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.restassured.response.Response;
@@ -10,14 +9,11 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Implementation_Class {
@@ -26,7 +22,7 @@ public class Implementation_Class {
     ApiHelper api = new ApiHelper();
     API restMethods = new API();
 
-    JSONUtils json = new JSONUtils();
+ //   JSONUtils json = new JSONUtils();
 
     Response responseBody;
     Map<String, Object> headers = new HashMap<String, Object>();
