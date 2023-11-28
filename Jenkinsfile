@@ -4,19 +4,13 @@ agent any
 
   stages{
 
-    stage('clean the code')
+    stage('log version info')
     {
      steps{
-              sh 'mvn clean'
+              sh 'mvn --version'
+              sh 'mvn clean install'
           }
      }
-    stage('Unit testing 5')
-    {
-     steps{
-          sh 'mvn test'
-          }
-     }
-
 
      }
 }
