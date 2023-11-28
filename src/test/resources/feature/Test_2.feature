@@ -7,7 +7,7 @@ Feature: Token Generation
     Then Return the response Body
     And Return the Status code as "200" and verify the status code should be "200" in case of "Token Generation"
     And Return the Status Line as "HTTP/1.1 200 OK" and verify the status Line should be "HTTP/1.1 200 OK" in case of "Token Generation"
-    # This step to store the token and use it in all cases
+    # This step to store the token and use it in all test cases.
     And Get the Token Value
 
   @createdToken_UnsingInvalidCredentials
