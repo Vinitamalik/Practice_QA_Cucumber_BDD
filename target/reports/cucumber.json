@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-11-27T00:16:30.313Z",
+        "start_timestamp": "2023-11-29T15:04:34.617Z",
         "line": 3,
         "name": "Customer dynamically selects locations for battery replacements",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4204000,
+              "duration": 16272800,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 427300,
+              "duration": 756900,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 535300,
+              "duration": 289900,
               "status": "passed"
             },
             "line": 6,
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:30.329Z",
+        "start_timestamp": "2023-11-29T15:04:34.658Z",
         "line": 9,
         "name": "Customer dynamically sets battery level threshold configuration",
         "description": "",
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 572200,
+              "duration": 387400,
               "status": "passed"
             },
             "line": 10,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 280900,
+              "duration": 632600,
               "status": "passed"
             },
             "line": 11,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 184800,
+              "duration": 448400,
               "status": "passed"
             },
             "line": 12,
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:30.333Z",
+        "start_timestamp": "2023-11-29T15:04:34.661Z",
         "line": 14,
         "name": "LED blinks when battery level is below the threshold in selected locations",
         "description": "",
@@ -107,7 +107,7 @@
         "steps": [
           {
             "result": {
-              "duration": 643200,
+              "duration": 478500,
               "status": "passed"
             },
             "line": 15,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 470100,
+              "duration": 211700,
               "status": "passed"
             },
             "line": 16,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 500600,
+              "duration": 202900,
               "status": "passed"
             },
             "line": 17,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 319600,
+              "duration": 199900,
               "status": "passed"
             },
             "line": 18,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 299200,
+              "duration": 245500,
               "status": "passed"
             },
             "line": 19,
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:30.339Z",
+        "start_timestamp": "2023-11-29T15:04:34.667Z",
         "line": 21,
         "name": "Customer replaces the battery in selected locations",
         "description": "",
@@ -178,7 +178,7 @@
         "steps": [
           {
             "result": {
-              "duration": 444300,
+              "duration": 1852800,
               "status": "passed"
             },
             "line": 22,
@@ -190,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 315700,
+              "duration": 939000,
               "status": "passed"
             },
             "line": 23,
@@ -202,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 279200,
+              "duration": 604100,
               "status": "passed"
             },
             "line": 24,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 343700,
+              "duration": 509700,
               "status": "passed"
             },
             "line": 25,
@@ -238,7 +238,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-27T00:16:30.344Z",
+        "start_timestamp": "2023-11-29T15:04:34.678Z",
         "line": 5,
         "name": "createToken for Customer user and verify Status as \u0027200\u0027",
         "description": "",
@@ -248,7 +248,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1552681300,
+              "duration": 1958138700,
               "status": "passed"
             },
             "line": 6,
@@ -260,7 +260,7 @@
           },
           {
             "result": {
-              "duration": 576500,
+              "duration": 418800,
               "status": "passed"
             },
             "line": 7,
@@ -272,7 +272,7 @@
           },
           {
             "result": {
-              "duration": 2326500,
+              "duration": 1886200,
               "status": "passed"
             },
             "line": 8,
@@ -298,7 +298,7 @@
           },
           {
             "result": {
-              "duration": 397200,
+              "duration": 362500,
               "status": "passed"
             },
             "line": 9,
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 52254900,
+              "duration": 48749200,
               "status": "passed"
             },
             "line": 11,
@@ -345,7 +345,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:31.962Z",
+        "start_timestamp": "2023-11-29T15:04:36.695Z",
         "line": 22,
         "name": "This is to verify the token bearer in case of Invalid Invalid_UserName",
         "description": "",
@@ -355,7 +355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 328070400,
+              "duration": 319195000,
               "status": "passed"
             },
             "line": 15,
@@ -373,7 +373,7 @@
           },
           {
             "result": {
-              "duration": 220700,
+              "duration": 318000,
               "status": "passed"
             },
             "line": 16,
@@ -385,7 +385,7 @@
           },
           {
             "result": {
-              "duration": 220000,
+              "duration": 191500,
               "status": "passed"
             },
             "line": 17,
@@ -403,7 +403,7 @@
           },
           {
             "result": {
-              "duration": 238500,
+              "duration": 223100,
               "status": "passed"
             },
             "line": 18,
@@ -430,7 +430,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:32.295Z",
+        "start_timestamp": "2023-11-29T15:04:37.019Z",
         "line": 23,
         "name": "This is to verify the token bearer in case of Invalid Invalid Password",
         "description": "",
@@ -440,7 +440,7 @@
         "steps": [
           {
             "result": {
-              "duration": 356720900,
+              "duration": 362651900,
               "status": "passed"
             },
             "line": 15,
@@ -458,7 +458,7 @@
           },
           {
             "result": {
-              "duration": 205400,
+              "duration": 334800,
               "status": "passed"
             },
             "line": 16,
@@ -470,7 +470,7 @@
           },
           {
             "result": {
-              "duration": 155500,
+              "duration": 364200,
               "status": "passed"
             },
             "line": 17,
@@ -488,7 +488,7 @@
           },
           {
             "result": {
-              "duration": 246700,
+              "duration": 271600,
               "status": "passed"
             },
             "line": 18,
@@ -515,7 +515,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:32.654Z",
+        "start_timestamp": "2023-11-29T15:04:37.384Z",
         "line": 24,
         "name": "This is to verify the token bearer in case of Invalid Invalid Client ID",
         "description": "",
@@ -525,7 +525,7 @@
         "steps": [
           {
             "result": {
-              "duration": 323156200,
+              "duration": 309928100,
               "status": "passed"
             },
             "line": 15,
@@ -543,7 +543,7 @@
           },
           {
             "result": {
-              "duration": 163300,
+              "duration": 154900,
               "status": "passed"
             },
             "line": 16,
@@ -555,7 +555,7 @@
           },
           {
             "result": {
-              "duration": 312300,
+              "duration": 444400,
               "status": "passed"
             },
             "line": 17,
@@ -573,7 +573,7 @@
           },
           {
             "result": {
-              "duration": 1380700,
+              "duration": 449300,
               "status": "passed"
             },
             "line": 18,
@@ -600,7 +600,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:32.981Z",
+        "start_timestamp": "2023-11-29T15:04:37.697Z",
         "line": 25,
         "name": "This is to verify the token bearer in case of Invalid Invalid Grant_Type",
         "description": "",
@@ -610,7 +610,7 @@
         "steps": [
           {
             "result": {
-              "duration": 299294000,
+              "duration": 293232500,
               "status": "passed"
             },
             "line": 15,
@@ -628,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 188400,
+              "duration": 147600,
               "status": "passed"
             },
             "line": 16,
@@ -640,7 +640,7 @@
           },
           {
             "result": {
-              "duration": 524400,
+              "duration": 146100,
               "status": "passed"
             },
             "line": 17,
@@ -658,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 673600,
+              "duration": 183000,
               "status": "passed"
             },
             "line": 18,
@@ -685,7 +685,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:33.283Z",
+        "start_timestamp": "2023-11-29T15:04:37.993Z",
         "line": 37,
         "name": "This is to verify the token bearer in case of Invalid Unsupported Conetent_Type",
         "description": "",
@@ -695,7 +695,7 @@
         "steps": [
           {
             "result": {
-              "duration": 294905300,
+              "duration": 295270600,
               "status": "passed"
             },
             "line": 30,
@@ -713,7 +713,7 @@
           },
           {
             "result": {
-              "duration": 205100,
+              "duration": 689700,
               "status": "passed"
             },
             "line": 31,
@@ -725,7 +725,7 @@
           },
           {
             "result": {
-              "duration": 312900,
+              "duration": 830200,
               "status": "passed"
             },
             "line": 32,
@@ -743,7 +743,7 @@
           },
           {
             "result": {
-              "duration": 285900,
+              "duration": 649600,
               "status": "passed"
             },
             "line": 33,
@@ -790,7 +790,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-27T00:16:33.583Z",
+        "start_timestamp": "2023-11-29T15:04:38.294Z",
         "line": 13,
         "name": "Create Logger for MR_812P",
         "description": "",
@@ -800,7 +800,7 @@
         "steps": [
           {
             "result": {
-              "duration": 441237100,
+              "duration": 515747100,
               "status": "passed"
             },
             "line": 6,
@@ -818,7 +818,7 @@
           },
           {
             "result": {
-              "duration": 803100,
+              "duration": 657400,
               "status": "passed"
             },
             "line": 7,
@@ -830,7 +830,7 @@
           },
           {
             "result": {
-              "duration": 1054100,
+              "duration": 1013400,
               "status": "passed"
             },
             "line": 8,
@@ -848,7 +848,7 @@
           },
           {
             "result": {
-              "duration": 599300,
+              "duration": 392100,
               "status": "passed"
             },
             "line": 9,
@@ -883,7 +883,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:34.036Z",
+        "start_timestamp": "2023-11-29T15:04:38.827Z",
         "line": 14,
         "name": "Create Logger for MR_810T",
         "description": "",
@@ -893,7 +893,7 @@
         "steps": [
           {
             "result": {
-              "duration": 299040800,
+              "duration": 315839000,
               "status": "passed"
             },
             "line": 6,
@@ -911,7 +911,7 @@
           },
           {
             "result": {
-              "duration": 147700,
+              "duration": 252200,
               "status": "passed"
             },
             "line": 7,
@@ -923,7 +923,7 @@
           },
           {
             "result": {
-              "duration": 254300,
+              "duration": 193200,
               "status": "passed"
             },
             "line": 8,
@@ -941,7 +941,7 @@
           },
           {
             "result": {
-              "duration": 259800,
+              "duration": 512400,
               "status": "passed"
             },
             "line": 9,
@@ -976,7 +976,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:34.338Z",
+        "start_timestamp": "2023-11-29T15:04:39.149Z",
         "line": 27,
         "name": "Create Logger for negative Using Non-Hex 16 chars key",
         "description": "",
@@ -986,7 +986,7 @@
         "steps": [
           {
             "result": {
-              "duration": 292775600,
+              "duration": 289592200,
               "status": "passed"
             },
             "line": 19,
@@ -1012,7 +1012,7 @@
           },
           {
             "result": {
-              "duration": 474900,
+              "duration": 158900,
               "status": "passed"
             },
             "line": 20,
@@ -1024,7 +1024,7 @@
           },
           {
             "result": {
-              "duration": 185700,
+              "duration": 142700,
               "status": "passed"
             },
             "line": 21,
@@ -1042,7 +1042,7 @@
           },
           {
             "result": {
-              "duration": 1209600,
+              "duration": 1067000,
               "status": "passed"
             },
             "line": 22,
@@ -1069,7 +1069,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:34.640Z",
+        "start_timestamp": "2023-11-29T15:04:39.450Z",
         "line": 28,
         "name": "Create Logger for negative Using Non-Hex 16 chars key",
         "description": "",
@@ -1079,7 +1079,7 @@
         "steps": [
           {
             "result": {
-              "duration": 294107900,
+              "duration": 285859800,
               "status": "passed"
             },
             "line": 19,
@@ -1105,7 +1105,7 @@
           },
           {
             "result": {
-              "duration": 237500,
+              "duration": 356000,
               "status": "passed"
             },
             "line": 20,
@@ -1117,7 +1117,7 @@
           },
           {
             "result": {
-              "duration": 359700,
+              "duration": 460900,
               "status": "passed"
             },
             "line": 21,
@@ -1135,7 +1135,7 @@
           },
           {
             "result": {
-              "duration": 225800,
+              "duration": 248000,
               "status": "passed"
             },
             "line": 22,
@@ -1162,7 +1162,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:34.938Z",
+        "start_timestamp": "2023-11-29T15:04:39.740Z",
         "line": 29,
         "name": "Create Logger for negative Using 17 Hex Chars Key",
         "description": "",
@@ -1172,7 +1172,7 @@
         "steps": [
           {
             "result": {
-              "duration": 296784500,
+              "duration": 306221200,
               "status": "passed"
             },
             "line": 19,
@@ -1198,7 +1198,7 @@
           },
           {
             "result": {
-              "duration": 138800,
+              "duration": 315100,
               "status": "passed"
             },
             "line": 20,
@@ -1211,7 +1211,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: verify Expected400201\nExpected: \u003c201\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat Common.ApiHelper.assertStatusCode(ApiHelper.java:165)\r\n\tat PageFactory.Implementation_Class.status_code(Implementation_Class.java:129)\r\n\tat StepDefinition.stepdefinition.Invalid_cases(stepdefinition.java:62)\r\n\tat ✽.user should get response status code as \"400\"(file:src/test/resources/feature/Test_3.feature:21)\r\n",
-              "duration": 1408500,
+              "duration": 2537200,
               "status": "failed"
             },
             "line": 21,
@@ -1229,7 +1229,7 @@
           },
           {
             "result": {
-              "duration": 248500,
+              "duration": 251900,
               "status": "skipped"
             },
             "line": 22,
@@ -1256,7 +1256,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:35.249Z",
+        "start_timestamp": "2023-11-29T15:04:40.062Z",
         "line": 30,
         "name": "Create Logger for negative Using 20 Hex Chars Key",
         "description": "",
@@ -1266,7 +1266,7 @@
         "steps": [
           {
             "result": {
-              "duration": 278221400,
+              "duration": 292077600,
               "status": "passed"
             },
             "line": 19,
@@ -1292,7 +1292,7 @@
           },
           {
             "result": {
-              "duration": 157400,
+              "duration": 135000,
               "status": "passed"
             },
             "line": 20,
@@ -1304,7 +1304,7 @@
           },
           {
             "result": {
-              "duration": 158300,
+              "duration": 130400,
               "status": "passed"
             },
             "line": 21,
@@ -1322,7 +1322,7 @@
           },
           {
             "result": {
-              "duration": 203100,
+              "duration": 177700,
               "status": "passed"
             },
             "line": 22,
@@ -1349,7 +1349,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:35.530Z",
+        "start_timestamp": "2023-11-29T15:04:40.356Z",
         "line": 31,
         "name": "Create Logger for negative Using 0 chars Hex Key",
         "description": "",
@@ -1359,7 +1359,7 @@
         "steps": [
           {
             "result": {
-              "duration": 289921000,
+              "duration": 299200900,
               "status": "passed"
             },
             "line": 19,
@@ -1385,7 +1385,7 @@
           },
           {
             "result": {
-              "duration": 136000,
+              "duration": 138800,
               "status": "passed"
             },
             "line": 20,
@@ -1397,7 +1397,7 @@
           },
           {
             "result": {
-              "duration": 277600,
+              "duration": 149000,
               "status": "passed"
             },
             "line": 21,
@@ -1415,7 +1415,7 @@
           },
           {
             "result": {
-              "duration": 174400,
+              "duration": 291000,
               "status": "passed"
             },
             "line": 22,
@@ -1442,7 +1442,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:35.823Z",
+        "start_timestamp": "2023-11-29T15:04:40.658Z",
         "line": 32,
         "name": "Create Logger for negative Using 0 chars Hex Key",
         "description": "",
@@ -1452,7 +1452,7 @@
         "steps": [
           {
             "result": {
-              "duration": 291200200,
+              "duration": 283291400,
               "status": "passed"
             },
             "line": 19,
@@ -1478,7 +1478,7 @@
           },
           {
             "result": {
-              "duration": 225400,
+              "duration": 147500,
               "status": "passed"
             },
             "line": 20,
@@ -1490,7 +1490,7 @@
           },
           {
             "result": {
-              "duration": 256300,
+              "duration": 202900,
               "status": "passed"
             },
             "line": 21,
@@ -1508,7 +1508,7 @@
           },
           {
             "result": {
-              "duration": 248100,
+              "duration": 314900,
               "status": "passed"
             },
             "line": 22,
@@ -1535,7 +1535,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:36.116Z",
+        "start_timestamp": "2023-11-29T15:04:40.944Z",
         "line": 33,
         "name": "Create Logger for negative Using Invalid Logger Type",
         "description": "",
@@ -1545,7 +1545,7 @@
         "steps": [
           {
             "result": {
-              "duration": 297784900,
+              "duration": 299042400,
               "status": "passed"
             },
             "line": 19,
@@ -1571,7 +1571,7 @@
           },
           {
             "result": {
-              "duration": 240500,
+              "duration": 237400,
               "status": "passed"
             },
             "line": 20,
@@ -1584,7 +1584,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: verify Expected400500\nExpected: \u003c500\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat Common.ApiHelper.assertStatusCode(ApiHelper.java:165)\r\n\tat PageFactory.Implementation_Class.status_code(Implementation_Class.java:129)\r\n\tat StepDefinition.stepdefinition.Invalid_cases(stepdefinition.java:62)\r\n\tat ✽.user should get response status code as \"400\"(file:src/test/resources/feature/Test_3.feature:21)\r\n",
-              "duration": 462600,
+              "duration": 300000,
               "status": "failed"
             },
             "line": 21,
@@ -1602,7 +1602,7 @@
           },
           {
             "result": {
-              "duration": 222200,
+              "duration": 291500,
               "status": "skipped"
             },
             "line": 22,
@@ -1629,7 +1629,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:36.419Z",
+        "start_timestamp": "2023-11-29T15:04:41.248Z",
         "line": 34,
         "name": "Create Logger for negative Using without Logger Type",
         "description": "",
@@ -1639,7 +1639,7 @@
         "steps": [
           {
             "result": {
-              "duration": 312708900,
+              "duration": 300544800,
               "status": "passed"
             },
             "line": 19,
@@ -1665,7 +1665,7 @@
           },
           {
             "result": {
-              "duration": 338900,
+              "duration": 332600,
               "status": "passed"
             },
             "line": 20,
@@ -1678,7 +1678,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: verify Expected400500\nExpected: \u003c500\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat Common.ApiHelper.assertStatusCode(ApiHelper.java:165)\r\n\tat PageFactory.Implementation_Class.status_code(Implementation_Class.java:129)\r\n\tat StepDefinition.stepdefinition.Invalid_cases(stepdefinition.java:62)\r\n\tat ✽.user should get response status code as \"400\"(file:src/test/resources/feature/Test_3.feature:21)\r\n",
-              "duration": 317500,
+              "duration": 391400,
               "status": "failed"
             },
             "line": 21,
@@ -1696,7 +1696,7 @@
           },
           {
             "result": {
-              "duration": 145500,
+              "duration": 121000,
               "status": "skipped"
             },
             "line": 22,
@@ -1723,7 +1723,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:36.736Z",
+        "start_timestamp": "2023-11-29T15:04:41.552Z",
         "line": 46,
         "name": "Create Logger for Invalid Invalid Content Type",
         "description": "",
@@ -1733,7 +1733,7 @@
         "steps": [
           {
             "result": {
-              "duration": 352399200,
+              "duration": 377780900,
               "status": "passed"
             },
             "line": 38,
@@ -1759,7 +1759,7 @@
           },
           {
             "result": {
-              "duration": 158700,
+              "duration": 187300,
               "status": "passed"
             },
             "line": 39,
@@ -1771,7 +1771,7 @@
           },
           {
             "result": {
-              "duration": 329000,
+              "duration": 363800,
               "status": "passed"
             },
             "line": 40,
@@ -1789,7 +1789,7 @@
           },
           {
             "result": {
-              "duration": 112800,
+              "duration": 130000,
               "status": "passed"
             },
             "line": 41,
@@ -1816,7 +1816,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:37.092Z",
+        "start_timestamp": "2023-11-29T15:04:41.933Z",
         "line": 56,
         "name": "Create Logger for Invalid Auth Invalid API KEY",
         "description": "",
@@ -1826,7 +1826,7 @@
         "steps": [
           {
             "result": {
-              "duration": 284738200,
+              "duration": 284479100,
               "status": "passed"
             },
             "line": 50,
@@ -1852,7 +1852,7 @@
           },
           {
             "result": {
-              "duration": 457900,
+              "duration": 223600,
               "status": "passed"
             },
             "line": 51,
@@ -1864,7 +1864,7 @@
           },
           {
             "result": {
-              "duration": 290900,
+              "duration": 163500,
               "status": "passed"
             },
             "line": 52,
@@ -1891,7 +1891,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:37.380Z",
+        "start_timestamp": "2023-11-29T15:04:42.220Z",
         "line": 57,
         "name": "Create Logger for Invalid Auth Empty API KEy",
         "description": "",
@@ -1901,7 +1901,7 @@
         "steps": [
           {
             "result": {
-              "duration": 293410700,
+              "duration": 291905200,
               "status": "passed"
             },
             "line": 50,
@@ -1927,7 +1927,7 @@
           },
           {
             "result": {
-              "duration": 132100,
+              "duration": 163000,
               "status": "passed"
             },
             "line": 51,
@@ -1939,7 +1939,7 @@
           },
           {
             "result": {
-              "duration": 190100,
+              "duration": 128700,
               "status": "passed"
             },
             "line": 52,
@@ -1986,7 +1986,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-27T00:16:37.674Z",
+        "start_timestamp": "2023-11-29T15:04:42.513Z",
         "line": 13,
         "name": "Send data to server against the Logger number \"Create sensor data for MR_812P\"",
         "description": "",
@@ -1996,7 +1996,7 @@
         "steps": [
           {
             "result": {
-              "duration": 293645700,
+              "duration": 297178600,
               "status": "passed"
             },
             "line": 6,
@@ -2014,7 +2014,7 @@
           },
           {
             "result": {
-              "duration": 167000,
+              "duration": 203200,
               "status": "passed"
             },
             "line": 7,
@@ -2026,7 +2026,7 @@
           },
           {
             "result": {
-              "duration": 135400,
+              "duration": 326200,
               "status": "passed"
             },
             "line": 8,
@@ -2044,7 +2044,7 @@
           },
           {
             "result": {
-              "duration": 203500,
+              "duration": 187700,
               "status": "passed"
             },
             "line": 9,
@@ -2079,7 +2079,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-11-27T00:16:37.972Z",
+        "start_timestamp": "2023-11-29T15:04:42.815Z",
         "line": 14,
         "name": "Send data to server against the Logger number \"Create sensor data for MR_810T\"",
         "description": "",
@@ -2089,7 +2089,7 @@
         "steps": [
           {
             "result": {
-              "duration": 291852500,
+              "duration": 300433700,
               "status": "passed"
             },
             "line": 6,
@@ -2107,7 +2107,7 @@
           },
           {
             "result": {
-              "duration": 262700,
+              "duration": 146400,
               "status": "passed"
             },
             "line": 7,
@@ -2119,7 +2119,7 @@
           },
           {
             "result": {
-              "duration": 528900,
+              "duration": 247500,
               "status": "passed"
             },
             "line": 8,
@@ -2137,7 +2137,7 @@
           },
           {
             "result": {
-              "duration": 140400,
+              "duration": 131900,
               "status": "passed"
             },
             "line": 9,

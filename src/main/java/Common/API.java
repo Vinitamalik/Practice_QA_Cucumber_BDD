@@ -38,7 +38,7 @@ public class API extends ApiHelper{
     }
 
 
-    /* CGI_MS_AUTOM_START_<12/11/19> */
+
     public Response apiGetRequest(String urlKey, Map<String, Object> headers, Map<String, String> queryParameters, String endpoint) {
         return givenConfig(urlKey, headers).params(queryParameters).when().log().all().get(endpoint);
     }
